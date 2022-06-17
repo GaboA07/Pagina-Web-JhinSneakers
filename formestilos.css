@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: radial-gradient(#000000 0.75px, #e5e5f7 0.75px);
+    background-size: 15px 15px;
+    background-position: 0 0, 10px,10px;
+    display: flex;
+    min-height: 100vh;
+}
+
+.formulario{
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
+    text-align: center;
+}
+
+.titulo_formulario{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.parrafo_formulario{
+    font-weight: 300;
+}
+
+.link_formulario{
+    font-weight: 400;
+    color: #000000;
+}
+
+.contenedor_formulario{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.grupo_formulario{
+    position: relative;
+    --color: #5757577e;
+}
+
+.importar_formulario{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.importar_formulario:focus + .etiqueta_formulario,
+.importar_formulario:not(:placeholder-shown) + .etiqueta_formulario{
+    transform: translateY(-12px) escale(.7);
+    transform-origin: left top;
+    color: #3866;
+}
+
+.etiqueta_formulario{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color 3s;
+}
+
+.mostrar_formulario{
+    background: rgba(0, 0, 0, 0.4);
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    text-align: center;
+}
+
+.linea_formulario{
+    position: absolute;
+    bottom: 0;
+    
+}
